@@ -1,0 +1,392 @@
+
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+	font-family: sans-serif;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #8c8e8f;
+}
+section::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: #006400;
+}
+section .container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contactInfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #55ba16;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+section .container .contactInfo h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+section .container .contactInfo .info {
+    position: relative;
+    margin: 20px 0px;
+}
+section .container .contactInfo .info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0px;
+    align-items: flex-start;
+}
+section .container .contactInfo li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+section .container .contactInfo li span:nth-child(1) i {
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contactInfo li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+section .container .contactInfo li:hover span:nth-child(1) i, section .container .contactInfo li:hover span:nth-child(2) {
+    opacity: 1;
+}
+section .container .contactInfo .sci {
+    position: relative;
+    display: flex;
+}
+.fa-facebook, .fa-twitter , .fa-instagram , .fa-linkedin , .fa-pinterest-p {
+    color: #fff;
+    opacity: 0.5;
+}
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-pinterest-p:hover {
+    opacity: 1;
+}
+section .container .contactInfo .sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+section .container .contactInfo .sci li a {
+    text-decoration: none;
+}
+section .container .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    margin-left: 150px;
+    padding-left: 250px;
+    background: #fff;
+    width: calc(100% - 150px);
+    height: 100%;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
+}
+section .container .contactForm h2 {
+    color: #006400;
+    font-size: 25px;
+    font-weight: 500;
+}
+section .container .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contactForm .formBox .inputBox {
+    position: relative;
+    margin: 0px 0px 35px 0px;
+}
+section .container .contactForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+section .container .contactForm .formBox .inputBox.w100 {
+    width: 100%;
+}
+section .container .contactForm .formBox .inputBox input, section .container .contactForm .formBox .inputBox textarea {
+    width: 100%!important;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    resize: none;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section .container .contactForm .formBox .inputBox textarea {
+    min-height: 120px;
+}
+section .container .contactForm .formBox .inputBox span {
+    position: absolute;
+    left: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #55ba16;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: #55ba16;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
+    background: #006400;
+}
+
+header p {
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.8em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+	}
+
+	header p {
+		color: #717171;
+	}
+
+
+
+/* Header */
+
+	body {
+		position: relative;
+		padding-top: 5em;
+	}
+
+	#header {
+		background: #55ba16;
+		color: #fff;
+		cursor: default;
+		height: 5em;
+		left: 0;
+		line-height: 5em;
+		position: fixed;
+		text-align: right;
+		top: 0;
+		width: 100%;
+		z-index: 10001;
+	}
+
+		#header .inner {
+			max-width: 65em;
+			width: calc(100% - 6em);
+			margin: 0 auto;
+			position: relative;
+		}
+
+			@media screen and (max-width: 480px) {
+
+				#header .inner {
+					max-width: 90%;
+					width: 90%;
+				}
+
+			}
+
+		#header .logo {
+			font-family: 'Pacifico', cursive;
+			display: inline-block;
+			height: inherit;
+			left: 0;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			color: #fff;
+			font-size: 1.75em;
+			text-transform: none;
+			font-weight: normal;
+			padding: 0;
+		}
+
+			#header .logo:hover {
+				color: #006400;
+			}
+
+		#header a {
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			display: inline-block;
+			padding: 0 2em;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: .85em;
+		}
+
+			#header a:hover {
+				color: rgba(255, 255, 255, 0.75);
+			}
+
+			#header a:last-child {
+				padding-right: 0em;
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#header a {
+					padding: 0 0.5em;
+				}
+
+			}
+
+	@media screen and (max-width: 480px) {
+
+		#header {
+			min-width: 320px;
+		}
+
+	}
+
+
+
+	
+
+		footer{
+    width: 100%;
+    background: #55ba16;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    color: #fff;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #006400;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #fff;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+.mapouter {
+	position:relative;
+	text-align:right;
+	height:339px;
+	width:1080px;
+	margin: 40px 0;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:339px;width:1080px;
+}
